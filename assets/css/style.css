@@ -1,10 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Shrikhand:wght@400&display=swap');
 body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+main{
     margin: 0;
     padding: 0;
 }
 
 /* Header */
+.navbar{
+    margin: 0;
+}
 .navbar nav {
     position: relative;
     display: flex;
@@ -53,3 +61,82 @@ body{
 /* End Header */
 
 
+.hero-section{
+    margin: 0;
+    text-align: center;
+    padding: 2em 7px 3em 7px;
+    background-color: #F6F6F6;
+}
+
+.hero-section  h1{
+    margin: 0;
+}
+.hero-section p{
+    margin-bottom: 2em;
+}
+.hero-section a{
+    padding: 0.8em 1.3em;
+    border-radius: 25px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(230,51,180,1) 0%, rgba(147,86,220,1) 100%);
+    border: none;
+    color: #fff;
+    box-shadow: -1px 2px 15px -6px #000000;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+}
+.hero-section a:hover{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(255, 40, 194) 0%, rgb(152, 73, 248) 100%);
+    box-shadow: -1px 5px 15px -6px #000000;
+}
+
+/*Start Process Section*/
+.process{
+    padding: 0 1.5em;
+}
+
+
+.step{
+    position: relative;
+    background-color: #F6F6F6;
+    padding: 1.3em 0;
+    border-radius: 20px;
+    padding-left: 2em;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    font-weight: bolder;
+    margin-bottom: 1.5em;
+}
+.step-number{
+    position: absolute;
+    left: -10px;
+    background-color: #9356DC;
+    color: #fff;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+}
+.step-icon{
+    color: #7E7E7E;
+}
+.step-description{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+@media all and (min-width: 900px){
+    .process-steps{
+        display: flex;
+        justify-content: space-between;
+    }
+    .step{
+        width: 33%;
+    }
+    .process-steps .step:not(:last-child) {
+        margin-right: 2em;
+    }
+}
+
+/*End Process Section*/
